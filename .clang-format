@@ -6,6 +6,6 @@ AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
 AlignTrailingComments: true
-ColumnLimit: 80
+ColumnLimit: 120
 DerivePointerAlignment: false
 LambdaBodyIndentation: OuterScope

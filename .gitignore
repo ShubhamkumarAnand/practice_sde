@@ -1,3 +1,4 @@
 .vscode/**
 algo
-.cph/**
+**/.cph/**
+a.out

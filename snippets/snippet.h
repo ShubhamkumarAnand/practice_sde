@@ -15,7 +15,6 @@ using namespace __gnu_pbds;
 // algo-debug
 #ifdef DEBUG
 #include "algo/debug.h"
-// #include "snippet.h"
 #else
 #define debug(...)
 #endif
