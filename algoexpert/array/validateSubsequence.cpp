@@ -58,6 +58,19 @@ using ld = long double;
 
 // Trust On Yourself and Start Doing!
 
+// My Solution
+bool validateSubsequence(vector<int>& array, vector<int>& subsequence) {
+  int arrIdx = 0, subIdx = 0;
+  while (subIdx < subsequence.size() && arrIdx < array.size()) {
+    if (subsequence[subIdx] == array[arrIdx]) {
+      subIdx++;
+      arrIdx++;
+    } 
+    arrIdx++;
+  }
+  return subIdx == subsequence.size();
+}
+
 // Memory Efficient Solution
 bool isValidSubsequence(vector<int>& array, vector<int>& subsequence) {
   int seqIdx = 0;
@@ -88,9 +101,9 @@ bool isValidSubsequence(vector<int>& array, vector<int>& subsequence, int arrIdx
 
 void solve(int testcase) {
   vector<int> array = {5, 1, 22, 25, 6, -1, 8, 10};
-  vector<int> subsequence = {1, 6, -1, 12};
+  vector<int> subsequence = {1, 6, -1};
 
-  if (isValidSubsequence(array, subsequence, array.size(), subsequence.size())) {
+  if (validateSubsequence(array, subsequence)) {
     cout << "YES"
          << "\n";
   } else {
